@@ -7,7 +7,7 @@ function Sun() {
   const sunRef = useRef();
 
   useFrame(() => {
-    sunRef.current.rotation.y += 0.001; // Slow rotation for realism
+    sunRef.current.rotation.y += 0.001; 
   });
 
   return (

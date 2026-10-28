@@ -19,6 +19,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import AsteroidImpact from "./AsteroidImpact";
 
 const formatDate = (date) => date.toISOString().split("T")[0];
 
@@ -204,7 +205,6 @@ const NasaNeoFeed = () => {
           </Box>
         </Toolbar>
       </AppBar>
-
       {/* Main Content */}
       <Box sx={{ position: "relative", height: "calc(100vh - 64px)" }}>
         {/* 3D Canvas */}
@@ -330,6 +330,7 @@ const NasaNeoFeed = () => {
           </Box>
         </Drawer>
       </Box>
+      <AsteroidImpact />
     </>
   );
 };

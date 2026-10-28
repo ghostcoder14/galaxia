@@ -59,7 +59,7 @@ const Astronauts = () => {
           - Nationality
           - Current Research on ISS
           - Fun fact about their career or personal achievements
-          Response should be concise and easy to understand in one line.
+          Response should be concise and easy to understand in one line and less than 50 words.
         `);
         details[astronaut.name] = response.response.text();
       } catch (error) {

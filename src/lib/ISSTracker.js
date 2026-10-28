@@ -6,7 +6,6 @@ const ASTRONAUTS_API = "http://api.open-notify.org/astros.json";
 
 export const getIssLocation = async () => {
   const response = await axios.get(NASA_API_URL);
-  console.log(response)
   return response.data;
 };
 

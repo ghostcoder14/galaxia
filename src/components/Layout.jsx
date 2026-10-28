@@ -4,7 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
   const location = useLocation();
-  const isHeaderVisible = !["/orbit-align"].includes(location.pathname);
+  const isHeaderVisible = !["/orbit-align", "/cosmic-quiz"].includes(location.pathname);
 
   return (
     <div className="min-h-screen bg-black">

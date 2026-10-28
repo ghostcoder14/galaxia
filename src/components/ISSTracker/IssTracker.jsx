@@ -69,7 +69,8 @@ const IssTracker = () => {
       const response = await axios.get(
         `https://geocode.maps.co/reverse?lat=${position.lat}&lon=${position.lon}&api_key=${API_KEY}`
       );
-      setCountry(response.data.address.country);
+      console.log(response)
+      setCountry(response.data.address.country || response.data.address.man_made);
     } catch (error) {
       console.error("Error fetching country:", error);
     }
@@ -138,7 +139,7 @@ const IssTracker = () => {
             {position.lat.toFixed(3)}, {position.lon.toFixed(3)}
           </p>
           <p className="text-lg flex gap-1.5 items-center">
-            <FaMapLocation /> <strong>Country :</strong>{" "}
+            <FaMapLocation /> <strong>Region :</strong>{" "}
             {country || "Unknown"}
           </p>
           <p className="text-lg flex gap-1.5 items-center">

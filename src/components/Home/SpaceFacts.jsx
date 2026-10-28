@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { GenAI } from "../../lib/genai";
 import { FiRefreshCw, FiInfo } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaAngleLeft } from "react-icons/fa";
 
 export default function SpaceFacts() {
   const [spaceFact, setSpaceFact] = useState("");
@@ -10,7 +11,7 @@ export default function SpaceFacts() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const prompt =
-    "Generate a unique and fascinating one-line space fact every time, including fun, surprising, and mind-blowing details about the universe";
+    "Generate a mind-blowing, fun, and surprising space not more than 40 words fact that has never been mentioned before. The fact should be unique, covering diverse topics such as exoplanets, black holes, cosmic phenomena, astronaut experiences, space exploration, time dilation, or quantum physics in space. Avoid repetition and ensure each fact is fresh, scientifically accurate, and awe-inspiring." ;
 
   const fetchSpaceFact = async () => {
     try {
@@ -32,6 +33,7 @@ export default function SpaceFacts() {
 
   return (
     <div className="mb-8 relative">
+       
       <div className="flex items-center justify-between mb-2">
         <h4 className="text-sm font-semibold text-gray-400 flex items-center">
           Did You Know?

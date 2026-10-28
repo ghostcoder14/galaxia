@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PayloadCard from "../components/Payloads/PayloadCard";
 
-const AllPayloads = () => {
+ const AllPayloads = () => {
   const [payloads, setPayloads] = useState([]);
 
   useEffect(() => {
@@ -22,5 +22,7 @@ const AllPayloads = () => {
     </div>
   );
 };
+
+
 
 export default AllPayloads;

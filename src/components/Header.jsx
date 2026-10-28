@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-black/10 backdrop-blur-lg shadow-lg z-70 px-5">
       <div className="container mx-auto flex justify-between items-center p-4">
-          <img src="/header.png" alt="" className="w-20" />
+        <img src="/header.png" alt="" className="w-20" />
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
@@ -30,10 +30,10 @@ const Header = () => {
             Sky Patrol
           </a>
           <a
-            href="/cosmic-explorer"
+            href="/solar-system"
             className="text-white text-lg hover:text-blue-300 transition"
           >
-            Cosmic Explorer
+            Solar System
           </a>
           <a
             href="/solar-surge"
@@ -58,7 +58,7 @@ const Header = () => {
           <ul className="flex flex-col items-center p-4 space-y-4">
             <li>
               <a
-                href="#home"
+                href="/"
                 className="text-white text-lg hover:text-blue-300 transition"
                 onClick={() => setIsOpen(false)}
               >
@@ -67,11 +67,10 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#missions"
+                href="/iss-tracker"
                 className="text-white text-lg hover:text-blue-300 transition"
-                onClick={() => setIsOpen(false)}
               >
-                Missions
+                ISS Tracker
               </a>
             </li>
             <li>
